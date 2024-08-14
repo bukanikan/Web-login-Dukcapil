@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Main Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      .button-container {
+        text-align: center;
+      }
+      .button-container button {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: #007bff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .button-container button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button id="lolosBtn">Lolos MSIB</button>
+      <button id="tidakMsibBtn">Tidak Lolos MSIB</button>
+    </div>
+
+    <script>
+      document.getElementById("lolosBtn").addEventListener("click", function () {
+        alert("Lolos button clicked!");
+      });
+
+      document.getElementById("tidakMsibBtn").addEventListener("click", function () {
+        alert("Tidak MSIB button clicked!");
+      });
+    </script>
+  </body>
+</html>
